@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: self-hosted
 
+    env:
+      PORT: 3000
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -22,3 +25,4 @@ jobs:
 
       - name: Deploy with docker-compose
         run: docker-compose up -d --build
+
