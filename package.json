@@ -1,12 +1,10 @@
 {
-  "name": "ping-service",
-  "version": "1.0.0",
-  "description": "Simple ping-pong service",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": "eslint .",
+    "test": "jest"
   },
-  "dependencies": {
-    "express": "^4.19.2"
+  "devDependencies": {
+    "eslint": "^8.57.0"
   }
 }
