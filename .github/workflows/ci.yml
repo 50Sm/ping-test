@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted
 
     env:
-      PORT: 3000
+      PORT: ${{ secrets.PORT }}
 
     steps:
       - name: Checkout code
@@ -25,4 +25,3 @@ jobs:
 
       - name: Deploy with docker-compose
         run: docker-compose up -d --build
-
