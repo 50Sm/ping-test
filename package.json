@@ -4,6 +4,9 @@
     "lint": "eslint .",
     "test": "jest"
   },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
   "devDependencies": {
     "eslint": "^8.57.0"
   }
