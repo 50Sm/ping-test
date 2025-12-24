@@ -1,11 +1,9 @@
-version: "3.9"
-
 services:
   ping-service:
     build: .
     container_name: ping-service
     ports:
-      - "${PORT}:${PORT}"
-    env_file:
-      - .env
+      - "${PORT:-3000}:${PORT:-3000}"
+    environment:
+      PORT: ${PORT:-3000}
     restart: unless-stopped
